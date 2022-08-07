@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Righteous&family=Roboto:ital,wght@0,100;1,400&family=Teko:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Rancho', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.before-game-title {
+    font-weight: 600;
+    font-size: 4vh;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 50%);
+    animation:snakeAnimation 5s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes snakeAnimation {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        top:30%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.score-title{
+    font-weight: bold;
+    font-size: 4vh;
+    color: white;
+    position: absolute;
+    right:1%;
+    top:1%;
+}
